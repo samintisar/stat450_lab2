@@ -7,12 +7,14 @@ library(janitor)
 # Fill in your code where necessary
 
 # Read the raw data
-raw_dat <- read_csv(...)
+raw_dat <- read_csv(here("data", "raw_data.csv"), show_col_types = FALSE)
+raw_dat
 
 # Wrangle the data
 new_dat <- raw_dat %>% 
-  clean_... %>% 
-  filter(...)
+  clean_names %>% 
+  filter(temperature_celsius>10)
+new_dat
 
 # Save the processed data
-write_rds(new_dat, ...)
+write_rds(new_dat, here("data", "processed_data.csv"))

@@ -13,10 +13,8 @@ theme_set(theme_light())
         
         
 # MODIFY THE CODE BELOW
-dat <- read_rds(...)
+dat <- read_rds(here("src", "01_cleaning.R"))
 ```
-
-
 
 ```{r}
 # DON'T CHANGE ANYTHING BELOW
