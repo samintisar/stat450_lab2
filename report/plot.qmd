@@ -13,7 +13,7 @@ theme_set(theme_light())
         
         
 # MODIFY THE CODE BELOW
-dat <- read_rds(here("src", "01_cleaning.R"))
+dat <- read_csv(here("data", "processed_data.csv"))
 ```
 
 ```{r}
